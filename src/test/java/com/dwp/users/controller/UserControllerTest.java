@@ -43,7 +43,7 @@ public class UserControllerTest {
                 "http://localhost:" + port + "base/city/London/users",
                 HttpMethod.GET,
                 null,
-                new ParameterizedTypeReference<>() {
+                new ParameterizedTypeReference<List<User>>() {
                 });
 
         assertNotNull(result);
@@ -55,7 +55,7 @@ public class UserControllerTest {
                 "http://localhost:" + port + "base/city/London/users/all",
                 HttpMethod.GET,
                 null,
-                new ParameterizedTypeReference<>() {
+                new ParameterizedTypeReference<List<User>>() {
                 });
 
         assertNotNull(result);
@@ -67,7 +67,7 @@ public class UserControllerTest {
                 "http://localhost:" + port + "base/city/London/users/catchment",
                 HttpMethod.GET,
                 null,
-                new ParameterizedTypeReference<>() {
+                new ParameterizedTypeReference<List<User>>() {
                 });
 
         assertNotNull(result);

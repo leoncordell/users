@@ -22,7 +22,7 @@ public class UserController {
     /**
      * @return All people within London plus all people within 50 miles of London
      */
-    @ApiOperation(value = "Get list of all people  in London and within 50 miles of London", response = Iterable.class, tags = "GetInLondonAndCatchmentPeople")
+    @ApiOperation(value = "Get list of all people  in London and within 50 miles of London", response = Iterable.class, tags = "GetPeopleLondonAndCatchment")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success|OK"),
             @ApiResponse(code = 500, message = "not available!")})
@@ -36,7 +36,7 @@ public class UserController {
      * @return All people from London
      */
 
-    @ApiOperation(value = "Get list of people  in London only ", response = Iterable.class, tags = "GetInLondonOnlyPeople")
+    @ApiOperation(value = "Get list of people  in London only ", response = Iterable.class, tags = "GetPeopleInLondon")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success|OK"),
             @ApiResponse(code = 500, message = "not available!")})
@@ -49,7 +49,7 @@ public class UserController {
     /**
      * @return All people who are within 50 miles of London , but are not actually within London
      */
-    @ApiOperation(value = "Get list of people  within 50 miles of London (But not in London) ", response = Iterable.class, tags = "OutOfLondonPeople")
+    @ApiOperation(value = "Get list of people  within 50 miles of London (But not in London) ", response = Iterable.class, tags = "GetPeopleIn50MileOutsideLondon")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success|OK"),
             @ApiResponse(code = 500, message = "not available!")})

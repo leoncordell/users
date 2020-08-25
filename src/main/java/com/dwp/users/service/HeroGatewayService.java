@@ -7,9 +7,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toSet;
 
 /**
  * Using  https://bpdts-test-app.herokuapp.com  endpoints see
@@ -55,6 +58,7 @@ public class HeroGatewayService {
                 * Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2));
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         return earthRadius * c;
+
     }
 
     private Flux<User> getClient(String url) {
@@ -71,22 +75,22 @@ public class HeroGatewayService {
      * Returns people who are
      * listed as either living in London, or whose current coordinates are within 50 miles of London.
      *
-     * @return All people within London and within 50 miles radius
+     * @return List of Users
      */
     public List<User> retrieveUsers() {
         Flux<User> allUsersFlux = getClient(ALL_USERS_URL);
         Flux<User> cityusersFlux = getClient(CITY_USERS_URL);
         List<User> usersWithinRadius = allUsersFlux.collectList().block().stream().filter(u -> distFrom(u.getLatitude(), u.getLongitude(),
                 DESTINATION_LATITUDE, DESTINATION_LONGITUDE) <= RADIUS_TO_APPLY).collect(toList());
-        List<User> cityUsers = Objects.requireNonNull(cityusersFlux.collectList().block()).stream().collect(toList());
-        Set<User> allUsers = new HashSet<>(cityUsers);
-        allUsers.addAll(usersWithinRadius);
-        return new ArrayList<User>(allUsers);
+        Set<User> combinedCityAndRadiusUsers = cityusersFlux.collectList().block().stream().collect(toSet());
+
+        combinedCityAndRadiusUsers.addAll(usersWithinRadius);
+        return new ArrayList<>(combinedCityAndRadiusUsers);
     }
 
     public List<User> retrieveCityUsers() {
         Flux<User> cityusersFlux = getClient(CITY_USERS_URL);
-        return Objects.requireNonNull(cityusersFlux.collectList().block()).stream().collect(toList());
+        return cityusersFlux.collectList().block().stream().collect(toList());
     }
 
     public List<User> retrieveWithinRangeUsersOnly() {
