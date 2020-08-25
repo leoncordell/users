@@ -2,11 +2,14 @@ package com.dwp.users.service;
 
 import com.dwp.users.model.User;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -38,6 +41,11 @@ public class HeroGatewayService {
     @Value("${london.longitude}")
     private double DESTINATION_LONGITUDE;
 
+    @Value("${gateway.timout}")
+    private int TIMEOUT;
+
+    Logger LOGGER = LoggerFactory.getLogger("HeroGateWayService.class");
+
     /**
      * Distance between  two points based on their latitudes and longitudes
      *
@@ -62,12 +70,14 @@ public class HeroGatewayService {
     }
 
     private Flux<User> getClient(String url) {
+
         return WebClient.create()
                 .get()
                 .uri(url)
                 .retrieve()
-                .bodyToFlux(User.class);
-
+                .bodyToFlux(User.class)
+                .timeout(Duration.ofMillis(TIMEOUT))
+                .doOnError(error -> LOGGER.error("Error signal detected", error));
     }
 
 

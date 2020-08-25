@@ -869,3 +869,337 @@ io.netty.resolver.dns.DnsNameResolverTimeoutException: [/8.8.4.4:53] query via U
 2020-08-25 11:37:04.957  INFO 11212 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2020-08-25 11:37:04.966  INFO 11212 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2020-08-25 11:37:05.068  INFO 11212 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-25 11:56:57.180  INFO 16464 --- [restartedMain] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 1.8.0_91 on LAPTOP-OE718I23 with PID 16464 (C:\Users\leon\IdeaProjects\users\target\classes started by leon in C:\Users\leon\IdeaProjects\users)
+2020-08-25 11:56:57.193  INFO 16464 --- [restartedMain] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2020-08-25 11:56:57.462  INFO 16464 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\leon\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-08-25 11:56:57.465  INFO 16464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-25 11:56:57.465  INFO 16464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-25 11:57:03.653  INFO 16464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-25 11:57:03.688  INFO 16464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-25 11:57:03.689  INFO 16464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-25 11:57:04.094  INFO 16464 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2020-08-25 11:57:04.094  INFO 16464 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6628 ms
+2020-08-25 11:57:06.704  INFO 16464 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-25 11:57:07.788  INFO 16464 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 11:57:07.860  INFO 16464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-25 11:57:08.569  INFO 16464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2020-08-25 11:57:08.572  INFO 16464 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-25 11:57:08.646  INFO 16464 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-25 11:57:08.753  INFO 16464 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-25 11:57:09.350  INFO 16464 --- [restartedMain] com.dwp.users.UsersApplication           : Started UsersApplication in 13.88 seconds (JVM running for 17.175)
+2020-08-25 11:57:36.812  INFO 16464 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-25 11:57:36.814  INFO 16464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-25 11:57:36.817  INFO 16464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-08-25 11:59:03.723  WARN 16464 --- [reactor-http-nio-2] r.netty.http.client.HttpClientConnect    : [id: 0x015def99, L:/192.168.1.88:57261 - R:bpdts-test-app.herokuapp.com/52.210.127.18:443] The connection observed an error
+
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_91]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_91]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_91]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.51.Final.jar:4.1.51.Final]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2020-08-25 11:59:22.221 ERROR 16464 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/base] threw exception [Request processing failed; nested exception is reactor.core.Exceptions$ReactiveException: java.io.IOException: An existing connection was forcibly closed by the remote host] with root cause
+
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_91]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	|_ checkpoint ⇢ Request to GET https://bpdts-test-app.herokuapp.com/city/London/users [DefaultWebClient]
+Stack trace:
+		at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_91]
+		at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_91]
+		at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_91]
+		at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_91]
+		at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_91]
+		at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+		at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-buffer-4.1.51.Final.jar:4.1.51.Final]
+		at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.51.Final.jar:4.1.51.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.51.Final.jar:4.1.51.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.51.Final.jar:4.1.51.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.51.Final.jar:4.1.51.Final]
+		at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2020-08-25 12:12:20.744  INFO 18076 --- [restartedMain] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 1.8.0_91 on LAPTOP-OE718I23 with PID 18076 (C:\Users\leon\IdeaProjects\users\target\classes started by leon in C:\Users\leon\IdeaProjects\users)
+2020-08-25 12:12:20.810  INFO 18076 --- [restartedMain] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2020-08-25 12:12:21.164  INFO 18076 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\leon\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-08-25 12:12:21.165  INFO 18076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-25 12:12:21.166  INFO 18076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-25 12:12:26.904  INFO 18076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-25 12:12:26.934  INFO 18076 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-25 12:12:26.935  INFO 18076 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-25 12:12:27.329  INFO 18076 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2020-08-25 12:12:27.330  INFO 18076 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6163 ms
+2020-08-25 12:12:28.638  INFO 18076 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-25 12:12:29.158  INFO 18076 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 12:12:29.214  INFO 18076 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-25 12:12:29.768  INFO 18076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2020-08-25 12:12:29.770  INFO 18076 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-25 12:12:29.831  INFO 18076 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-25 12:12:29.910  INFO 18076 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-25 12:12:30.329  INFO 18076 --- [restartedMain] com.dwp.users.UsersApplication           : Started UsersApplication in 11.9 seconds (JVM running for 14.169)
+2020-08-25 12:12:36.959  INFO 18076 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-25 12:12:36.960  INFO 18076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-25 12:12:36.962  INFO 18076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-08-25 12:12:58.940 ERROR 18076 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/base] threw exception [Request processing failed; nested exception is reactor.core.Exceptions$ReactiveException: java.net.UnknownHostException: failed to resolve 'bpdts-test-app.herokuapp.com' after 3 queries ] with root cause
+
+io.netty.resolver.dns.DnsNameResolverTimeoutException: [/8.8.4.4:53] query via UDP timed out after 5000 milliseconds (no stack trace available)
+
+2020-08-25 12:15:05.306  WARN 18076 --- [reactor-http-nio-3] r.netty.http.client.HttpClientConnect    : [id: 0xc4c9376a, L:/192.168.1.88:58424 - R:bpdts-test-app.herokuapp.com/3.248.120.22:443] The connection observed an error
+
+io.netty.handler.timeout.ReadTimeoutException: null
+
+2020-08-25 12:15:05.309 ERROR 18076 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/base] threw exception [Request processing failed; nested exception is io.netty.handler.timeout.ReadTimeoutException] with root cause
+
+io.netty.handler.timeout.ReadTimeoutException: null
+
+2020-08-25 12:15:18.906 ERROR 18076 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/base] threw exception [Request processing failed; nested exception is reactor.core.Exceptions$ReactiveException: java.net.UnknownHostException: failed to resolve 'bpdts-test-app.herokuapp.com' after 3 queries ] with root cause
+
+io.netty.resolver.dns.DnsNameResolverTimeoutException: [/8.8.4.4:53] query via UDP timed out after 5000 milliseconds (no stack trace available)
+
+2020-08-25 12:15:18.908 ERROR 18076 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/base] threw exception [Request processing failed; nested exception is reactor.core.Exceptions$ReactiveException: java.net.UnknownHostException: failed to resolve 'bpdts-test-app.herokuapp.com' after 3 queries ] with root cause
+
+io.netty.resolver.dns.DnsNameResolverTimeoutException: [/8.8.4.4:53] query via UDP timed out after 5000 milliseconds (no stack trace available)
+
+2020-08-25 12:15:44.415 ERROR 18076 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/base] threw exception [Request processing failed; nested exception is reactor.core.Exceptions$ReactiveException: java.net.UnknownHostException: failed to resolve 'bpdts-test-app.herokuapp.com' after 3 queries ] with root cause
+
+io.netty.resolver.dns.DnsNameResolverTimeoutException: [/8.8.4.4:53] query via UDP timed out after 5000 milliseconds (no stack trace available)
+
+2020-08-25 12:25:22.106  INFO 972 --- [restartedMain] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 1.8.0_91 on LAPTOP-OE718I23 with PID 972 (C:\Users\leon\IdeaProjects\users\target\classes started by leon in C:\Users\leon\IdeaProjects\users)
+2020-08-25 12:25:22.174  INFO 972 --- [restartedMain] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2020-08-25 12:25:22.548  INFO 972 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\leon\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-08-25 12:25:22.552  INFO 972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-25 12:25:22.554  INFO 972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-25 12:25:29.901  INFO 972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-25 12:25:29.936  INFO 972 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-25 12:25:29.937  INFO 972 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-25 12:25:30.374  INFO 972 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2020-08-25 12:25:30.375  INFO 972 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7819 ms
+2020-08-25 12:25:33.161  INFO 972 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-25 12:25:34.619  INFO 972 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 12:25:34.697  INFO 972 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-25 12:25:35.806  INFO 972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2020-08-25 12:25:35.830  INFO 972 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-25 12:25:35.983  INFO 972 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-25 12:25:36.254  INFO 972 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-25 12:25:37.180  INFO 972 --- [restartedMain] com.dwp.users.UsersApplication           : Started UsersApplication in 17.219 seconds (JVM running for 20.983)
+2020-08-25 12:26:03.371  INFO 972 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-25 12:26:03.379  INFO 972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-25 12:26:03.384  INFO 972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-25 12:26:21.326 ERROR 972 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/base] threw exception [Request processing failed; nested exception is reactor.core.Exceptions$ReactiveException: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 4000ms in 'flatMapMany' (and no fallback has been configured)] with root cause
+
+java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 4000ms in 'flatMapMany' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:294) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:279) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:418) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:119) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[na:1.8.0_91]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:1.8.0_91]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_91]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2020-08-25 12:29:46.788  INFO 17384 --- [restartedMain] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 1.8.0_91 on LAPTOP-OE718I23 with PID 17384 (C:\Users\leon\IdeaProjects\users\target\classes started by leon in C:\Users\leon\IdeaProjects\users)
+2020-08-25 12:29:46.802  INFO 17384 --- [restartedMain] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2020-08-25 12:29:47.091  INFO 17384 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\leon\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-08-25 12:29:47.095  INFO 17384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-25 12:29:47.097  INFO 17384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-25 12:29:52.899  INFO 17384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-25 12:29:52.921  INFO 17384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-25 12:29:52.922  INFO 17384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-25 12:29:53.246  INFO 17384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2020-08-25 12:29:53.247  INFO 17384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6149 ms
+2020-08-25 12:29:54.582  INFO 17384 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-25 12:29:55.139  INFO 17384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 12:29:55.193  INFO 17384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-25 12:29:55.697  INFO 17384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2020-08-25 12:29:55.700  INFO 17384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-25 12:29:55.770  INFO 17384 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-25 12:29:55.869  INFO 17384 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-25 12:29:56.447  INFO 17384 --- [restartedMain] com.dwp.users.UsersApplication           : Started UsersApplication in 11.375 seconds (JVM running for 14.082)
+2020-08-25 12:30:02.610  INFO 17384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-25 12:30:02.611  INFO 17384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-25 12:30:02.613  INFO 17384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-08-25 12:31:40.933 ERROR 17384 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/base] threw exception [Request processing failed; nested exception is reactor.core.Exceptions$ReactiveException: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 6000ms in 'flatMapMany' (and no fallback has been configured)] with root cause
+
+java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 6000ms in 'flatMapMany' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:294) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:279) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:418) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:119) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_91]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_91]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2020-08-25 12:49:35.764  INFO 11480 --- [restartedMain] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 1.8.0_91 on LAPTOP-OE718I23 with PID 11480 (C:\Users\leon\IdeaProjects\users\target\classes started by leon in C:\Users\leon\IdeaProjects\users)
+2020-08-25 12:49:35.773  INFO 11480 --- [restartedMain] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2020-08-25 12:49:36.038  INFO 11480 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\leon\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-08-25 12:49:36.040  INFO 11480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-25 12:49:36.041  INFO 11480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-25 12:49:42.602  INFO 11480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-25 12:49:42.632  INFO 11480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-25 12:49:42.633  INFO 11480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-25 12:49:42.968  INFO 11480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2020-08-25 12:49:42.968  INFO 11480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6926 ms
+2020-08-25 12:49:44.470  INFO 11480 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-25 12:49:45.132  INFO 11480 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 12:49:45.191  INFO 11480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-25 12:49:46.081  INFO 11480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2020-08-25 12:49:46.147  INFO 11480 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-25 12:49:46.265  INFO 11480 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-25 12:49:46.399  INFO 11480 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-25 12:49:47.269  INFO 11480 --- [restartedMain] com.dwp.users.UsersApplication           : Started UsersApplication in 14.039 seconds (JVM running for 18.426)
+2020-08-25 12:50:12.042  INFO 11480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-25 12:50:12.043  INFO 11480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-25 12:50:12.046  INFO 11480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-08-25 12:51:44.082 ERROR 11480 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/base] threw exception [Request processing failed; nested exception is reactor.core.Exceptions$ReactiveException: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 6000ms in 'flatMapMany' (and no fallback has been configured)] with root cause
+
+java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 6000ms in 'flatMapMany' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:294) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:279) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:418) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:119) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_91]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_91]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2020-08-25 13:05:21.252  INFO 17736 --- [restartedMain] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 1.8.0_91 on LAPTOP-OE718I23 with PID 17736 (C:\Users\leon\IdeaProjects\users\target\classes started by leon in C:\Users\leon\IdeaProjects\users)
+2020-08-25 13:05:21.304  INFO 17736 --- [restartedMain] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2020-08-25 13:05:21.665  INFO 17736 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\leon\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/leon/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2020-08-25 13:05:21.715  INFO 17736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-25 13:05:21.717  INFO 17736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-25 13:05:26.986  INFO 17736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-25 13:05:27.015  INFO 17736 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-25 13:05:27.015  INFO 17736 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-25 13:05:27.393  INFO 17736 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2020-08-25 13:05:27.394  INFO 17736 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5676 ms
+2020-08-25 13:05:28.591  INFO 17736 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-25 13:05:29.096  INFO 17736 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 13:05:29.139  INFO 17736 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-25 13:05:29.720  INFO 17736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2020-08-25 13:05:29.723  INFO 17736 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-25 13:05:29.800  INFO 17736 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-25 13:05:29.884  INFO 17736 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-25 13:05:30.328  INFO 17736 --- [restartedMain] com.dwp.users.UsersApplication           : Started UsersApplication in 10.673 seconds (JVM running for 12.893)
+2020-08-25 13:05:37.766  INFO 17736 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-25 13:05:37.766  INFO 17736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-25 13:05:37.769  INFO 17736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-08-25 13:06:08.685 ERROR 17736 --- [parallel-1] HeroGateWayService.class                 : Error signal detected
+
+java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 6000ms in 'flatMapMany' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:294) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:279) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:418) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:119) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_91]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_91]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_91]
+
+2020-08-25 13:06:08.706 ERROR 17736 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/base] threw exception [Request processing failed; nested exception is reactor.core.Exceptions$ReactiveException: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 6000ms in 'flatMapMany' (and no fallback has been configured)] with root cause
+
+java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 6000ms in 'flatMapMany' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:294) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:279) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:418) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:119) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.4.0-20200818.165707-85.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_91]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_91]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) ~[na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+
+2020-08-25 13:11:03.146  INFO 16100 --- [main] .d.u.s.HeroGatewayServiceIntegrationTest : Starting HeroGatewayServiceIntegrationTest using Java 1.8.0_91 on LAPTOP-OE718I23 with PID 16100 (started by leon in C:\Users\leon\IdeaProjects\users)
+2020-08-25 13:11:03.154  INFO 16100 --- [main] .d.u.s.HeroGatewayServiceIntegrationTest : No active profile set, falling back to default profiles: default
+2020-08-25 13:11:09.002  INFO 16100 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-25 13:11:10.622  INFO 16100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 13:11:12.161  INFO 16100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-25 13:11:12.231  INFO 16100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-25 13:11:12.318  INFO 16100 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-25 13:11:12.875  INFO 16100 --- [main] .d.u.s.HeroGatewayServiceIntegrationTest : Started HeroGatewayServiceIntegrationTest in 10.783 seconds (JVM running for 15.624)
+2020-08-25 13:11:22.366  INFO 16100 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dwp.users.UsersApplicationTests], using SpringBootContextLoader
+2020-08-25 13:11:22.368  INFO 16100 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.dwp.users.UsersApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-25 13:11:22.369  INFO 16100 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dwp.users.UsersApplicationTests]: UsersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-08-25 13:11:22.379  INFO 16100 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dwp.users.UsersApplication for test class com.dwp.users.UsersApplicationTests
+2020-08-25 13:11:22.381  INFO 16100 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-08-25 13:11:22.384  INFO 16100 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@28b458e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@221ca495, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@119d4443, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@773eca84, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7d47dfed, org.springframework.test.context.event.EventPublishingTestExecutionListener@3a38e4dc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@41fc0084, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@401788d5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3ec9f8d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7e0f9528, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5f56424d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@237b2852]
+2020-08-25 13:11:22.527  INFO 16100 --- [main] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 1.8.0_91 on LAPTOP-OE718I23 with PID 16100 (started by leon in C:\Users\leon\IdeaProjects\users)
+2020-08-25 13:11:22.531  INFO 16100 --- [main] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2020-08-25 13:11:23.826  INFO 16100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-25 13:11:23.857  INFO 16100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-25 13:11:23.859  INFO 16100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-25 13:11:24.368  INFO 16100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2020-08-25 13:11:24.369  INFO 16100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1827 ms
+2020-08-25 13:11:24.837  INFO 16100 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-25 13:11:24.918  INFO 16100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 13:11:25.022  INFO 16100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2020-08-25 13:11:25.024  INFO 16100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-25 13:11:25.025  INFO 16100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-25 13:11:25.037  INFO 16100 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-25 13:11:25.156  INFO 16100 --- [main] com.dwp.users.UsersApplication           : Started UsersApplication in 2.758 seconds (JVM running for 27.904)
+2020-08-25 13:11:25.201  INFO 16100 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.dwp.users.controller.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-25 13:11:25.207  INFO 16100 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-08-25 13:11:25.212  INFO 16100 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@793d09e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@68821f6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3ba46845, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@40a28bda, org.springframework.test.context.support.DirtiesContextTestExecutionListener@592cb470, org.springframework.test.context.event.EventPublishingTestExecutionListener@1e6cb932, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6921cfa, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@523abba9, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6e090aaa, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@15d79b70, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33430fc, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@45424c0]
+2020-08-25 13:11:25.289  INFO 16100 --- [main] c.d.users.controller.UserControllerTest  : Starting UserControllerTest using Java 1.8.0_91 on LAPTOP-OE718I23 with PID 16100 (started by leon in C:\Users\leon\IdeaProjects\users)
+2020-08-25 13:11:25.290  INFO 16100 --- [main] c.d.users.controller.UserControllerTest  : No active profile set, falling back to default profiles: default
+2020-08-25 13:11:26.361  INFO 16100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-08-25 13:11:26.364  INFO 16100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-25 13:11:26.365  INFO 16100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-25 13:11:26.450  INFO 16100 --- [main] o.a.c.c.C.[.[localhost].[/base]          : Initializing Spring embedded WebApplicationContext
+2020-08-25 13:11:26.451  INFO 16100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1157 ms
+2020-08-25 13:11:27.593  INFO 16100 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-25 13:11:27.976  INFO 16100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 13:11:28.400  INFO 16100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60934 (http) with context path '/base'
+2020-08-25 13:11:28.409  INFO 16100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-25 13:11:28.411  INFO 16100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-25 13:11:28.426  INFO 16100 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-25 13:11:28.498  INFO 16100 --- [main] c.d.users.controller.UserControllerTest  : Started UserControllerTest in 3.282 seconds (JVM running for 31.246)
+2020-08-25 13:11:29.060  INFO 16100 --- [http-nio-auto-1-exec-10] o.a.c.c.C.[.[localhost].[/base]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-25 13:11:29.063  INFO 16100 --- [http-nio-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-25 13:11:29.065  INFO 16100 --- [http-nio-auto-1-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-08-25 13:11:31.575  INFO 16100 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-25 13:11:31.609  INFO 16100 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-25 13:11:31.804  INFO 16100 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
