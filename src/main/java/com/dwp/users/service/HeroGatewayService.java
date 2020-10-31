@@ -22,16 +22,16 @@ import static java.util.stream.Collectors.toSet;
 @Service
 public class HeroGatewayService {
 
-    @Value("${london.users.url}")
-    private String londonUsersUrl;
-
-
-    @Value("${all.users.url}")
-    private String allUsersUrl;
-
-    @Value("${radius.miles}")
-    private Integer radiusToApply;
-
+//    @Value("${london.users.url}")
+//    private String londonUsersUrl;
+//
+//
+//    @Value("${all.users.url}")
+//    private String allUsersUrl;
+//
+//    @Value("${radius.miles}")
+//    private Integer radiusToApply;
+//
 
     @Autowired
     DistanceService distanceService;
