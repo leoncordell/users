@@ -145,3 +145,124 @@
 2021-01-26 14:55:51.555 TRACE 1508 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
 2021-01-26 14:55:51.558 TRACE 1508 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
 2021-01-26 14:55:51.558 DEBUG 1508 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2021-01-26 14:59:04.736  INFO 6688 --- [restartedMain] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 11.0.9 on LAPTOP-JARPR8VJ with PID 6688 (C:\Users\leonl\IdeaProjects\users\users\target\classes started by leonl in C:\Users\leonl\IdeaProjects\users\users)
+2021-01-26 14:59:04.744  INFO 6688 --- [restartedMain] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2021-01-26 14:59:04.861  INFO 6688 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\leonl\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2021-01-26 14:59:04.863  INFO 6688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-26 14:59:07.306  INFO 6688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-26 14:59:07.322  INFO 6688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 14:59:07.323  INFO 6688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-26 14:59:07.485  INFO 6688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2021-01-26 14:59:07.485  INFO 6688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2621 ms
+2021-01-26 14:59:07.491 TRACE 6688 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
+2021-01-26 14:59:07.504 TRACE 6688 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
+2021-01-26 14:59:07.504 TRACE 6688 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'formContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+2021-01-26 14:59:07.504 TRACE 6688 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
+2021-01-26 14:59:07.510 DEBUG 6688 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2021-01-26 14:59:07.511 DEBUG 6688 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-01-26 14:59:07.968 TRACE 6688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.d.u.c.UserController:
+	{GET [/city/London/users/all]}: getAllUsersInCityAndWithinCatchment()
+	{GET [/test]}: gettest()
+	{GET [/city/London/users/catchment]}: getCatchmentUsers()
+	{GET [/city/London/users]}: getCityUsers()
+2021-01-26 14:59:07.976 TRACE 6688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ [/swagger-resources/configuration/security]}: securityConfiguration()
+	{ [/swagger-resources/configuration/ui]}: uiConfiguration()
+	{ [/swagger-resources]}: swaggerResources()
+2021-01-26 14:59:07.989 TRACE 6688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-01-26 14:59:07.996 DEBUG 6688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2021-01-26 14:59:08.100  INFO 6688 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 14:59:08.442  INFO 6688 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 14:59:08.471  INFO 6688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-26 14:59:08.476 DEBUG 6688 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-26 14:59:08.529 DEBUG 6688 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2021-01-26 14:59:08.546 TRACE 6688 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2021-01-26 14:59:08.547 TRACE 6688 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-01-26 14:59:08.547 DEBUG 6688 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-26 14:59:08.555 DEBUG 6688 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-26 14:59:08.719  INFO 6688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2021-01-26 14:59:08.720  INFO 6688 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 14:59:08.754  INFO 6688 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 14:59:08.798  INFO 6688 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 14:59:08.990  INFO 6688 --- [restartedMain] com.dwp.users.UsersApplication           : Started UsersApplication in 5.028 seconds (JVM running for 6.008)
+2021-01-26 14:59:26.909  INFO 6688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 14:59:26.911  INFO 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 14:59:26.911 TRACE 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@7895fcf8
+2021-01-26 14:59:26.911 TRACE 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@7ff59e22
+2021-01-26 14:59:26.911 TRACE 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@7c9e46ea
+2021-01-26 14:59:26.913 TRACE 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2021-01-26 14:59:26.914 TRACE 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2021-01-26 14:59:26.914 DEBUG 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-01-26 14:59:26.915  INFO 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-01-26 14:59:26.926 TRACE 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/base/test", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-01-26 14:59:26.933 TRACE 6688 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.dwp.users.controller.UserController#gettest()
+2021-01-26 14:59:26.944 TRACE 6688 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: []
+2021-01-26 14:59:26.957 DEBUG 6688 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2021-01-26 14:59:26.958 TRACE 6688 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Test Success"]
+2021-01-26 14:59:26.971 TRACE 6688 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2021-01-26 14:59:26.972 TRACE 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-01-26 14:59:26.972 DEBUG 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2021-01-26 14:59:32.974 TRACE 6688 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/base/city/London/users", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-01-26 14:59:32.975 TRACE 6688 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.dwp.users.controller.UserController#getCityUsers()
+2021-01-26 14:59:32.976 TRACE 6688 --- [http-nio-8080-exec-3] o.s.web.method.HandlerMethod             : Arguments: []
+2021-01-26 14:59:33.253 TRACE 6688 --- [http-nio-8080-exec-3] o.s.w.r.f.client.ExchangeFunctions       : [1cf9073] HTTP GET https://bpdts-test-app.herokuapp.com/city/London/users, headers={}
+2021-01-26 14:59:35.146 TRACE 6688 --- [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [1cf9073] Response 200 OK, headers={masked}
+2021-01-26 14:59:35.226 TRACE 6688 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [1cf9073] Decoded [com.dwp.users.model.User@c85be8aa]
+2021-01-26 14:59:35.227 TRACE 6688 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [1cf9073] Decoded [com.dwp.users.model.User@93b83e16]
+2021-01-26 14:59:35.228 TRACE 6688 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [1cf9073] Decoded [com.dwp.users.model.User@57e69065]
+2021-01-26 14:59:35.228 TRACE 6688 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [1cf9073] Decoded [com.dwp.users.model.User@72b3423f]
+2021-01-26 14:59:35.229 TRACE 6688 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [1cf9073] Decoded [com.dwp.users.model.User@6e33a175]
+2021-01-26 14:59:35.230 TRACE 6688 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [1cf9073] Decoded [com.dwp.users.model.User@4c3796dc]
+2021-01-26 14:59:35.235 DEBUG 6688 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-01-26 14:59:35.235 TRACE 6688 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.dwp.users.model.User@c85be8aa, com.dwp.users.model.User@93b83e16, com.dwp.users.model.User@57e69065, com.dwp.users.model.User@72b3423f, com.dwp.users.model.User@6e33a175, com.dwp.users.model.User@4c3796dc]]
+2021-01-26 14:59:35.254 TRACE 6688 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2021-01-26 14:59:35.255 TRACE 6688 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-01-26 14:59:35.255 DEBUG 6688 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2021-01-26 15:15:24.963  INFO 16328 --- [restartedMain] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 11.0.9 on LAPTOP-JARPR8VJ with PID 16328 (C:\Users\leonl\IdeaProjects\users\users\target\classes started by leonl in C:\Users\leonl\IdeaProjects\users\users)
+2021-01-26 15:15:24.968  INFO 16328 --- [restartedMain] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2021-01-26 15:15:25.080  INFO 16328 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\leonl\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2021-01-26 15:15:25.081  INFO 16328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-26 15:15:27.400  INFO 16328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-26 15:15:27.417  INFO 16328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 15:15:27.417  INFO 16328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-26 15:15:27.573  INFO 16328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2021-01-26 15:15:27.573  INFO 16328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2491 ms
+2021-01-26 15:15:27.578 TRACE 16328 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
+2021-01-26 15:15:27.590 TRACE 16328 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
+2021-01-26 15:15:27.590 TRACE 16328 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'formContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+2021-01-26 15:15:27.590 TRACE 16328 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
+2021-01-26 15:15:27.595 DEBUG 16328 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2021-01-26 15:15:27.596 DEBUG 16328 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-01-26 15:15:27.985 TRACE 16328 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.d.u.c.UserController:
+	{GET [/city/London/users]}: getCityUsers()
+	{GET [/test]}: gettest()
+	{GET [/city/London/users/catchment]}: getCatchmentUsers()
+	{GET [/city/London/users/all]}: getAllUsersInCityAndWithinCatchment()
+2021-01-26 15:15:27.991 TRACE 16328 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ [/swagger-resources]}: swaggerResources()
+	{ [/swagger-resources/configuration/ui]}: uiConfiguration()
+	{ [/swagger-resources/configuration/security]}: securityConfiguration()
+2021-01-26 15:15:28.000 TRACE 16328 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-01-26 15:15:28.007 DEBUG 16328 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2021-01-26 15:15:28.088  INFO 16328 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 15:15:28.336  INFO 16328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 15:15:28.359  INFO 16328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-26 15:15:28.364 DEBUG 16328 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-26 15:15:28.410 DEBUG 16328 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2021-01-26 15:15:28.423 TRACE 16328 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2021-01-26 15:15:28.423 TRACE 16328 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-01-26 15:15:28.423 DEBUG 16328 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-26 15:15:28.431 DEBUG 16328 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-26 15:15:28.562  INFO 16328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2021-01-26 15:15:28.563  INFO 16328 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 15:15:28.593  INFO 16328 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
