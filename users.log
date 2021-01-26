@@ -1,273 +1,147 @@
-2020-10-26 11:38:50.923  INFO 6428 --- [main] com.dwp.users.UsersApplicationTests      : Starting UsersApplicationTests on LAPTOP-JARPR8VJ with PID 6428 (started by leonl in C:\Users\leonl\IdeaProjects\gov\users)
-2020-10-26 11:38:50.933  INFO 6428 --- [main] com.dwp.users.UsersApplicationTests      : No active profile set, falling back to default profiles: default
-2020-10-26 11:38:51.894  WARN 6428 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2020-10-26 11:38:52.912  WARN 6428 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'heroGatewayService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroGatewayService': Unsatisfied dependency expressed through field 'heroGateWayClient'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dwp.users.service.HeroGateWayClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2020-10-26 11:38:52.928  INFO 6428 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-10-26 11:38:53.097 ERROR 6428 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field heroGateWayClient in com.dwp.users.service.HeroGatewayService required a bean of type 'com.dwp.users.service.HeroGateWayClient' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.dwp.users.service.HeroGateWayClient' in your configuration.
-
-2020-10-26 11:38:53.097 ERROR 6428 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@47dd778] to prepare test instance [com.dwp.users.UsersApplicationTests@77c66a4f]
-
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[na:na]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[na:na]
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:na]
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[na:na]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) ~[junit5-rt.jar:na]
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220) ~[junit-rt.jar:na]
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53) ~[junit-rt.jar:na]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'heroGatewayService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroGatewayService': Unsatisfied dependency expressed through field 'heroGateWayClient'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dwp.users.service.HeroGateWayClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 63 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroGatewayService': Unsatisfied dependency expressed through field 'heroGateWayClient'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dwp.users.service.HeroGateWayClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 82 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dwp.users.service.HeroGateWayClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 95 common frames omitted
-
-2020-10-26 11:38:53.166  INFO 6428 --- [main] com.dwp.users.UsersApplicationTests      : Starting UsersApplicationTests on LAPTOP-JARPR8VJ with PID 6428 (started by leonl in C:\Users\leonl\IdeaProjects\gov\users)
-2020-10-26 11:38:53.166  INFO 6428 --- [main] com.dwp.users.UsersApplicationTests      : No active profile set, falling back to default profiles: default
-2020-10-26 11:38:53.651  WARN 6428 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'heroGatewayService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroGatewayService': Unsatisfied dependency expressed through field 'heroGateWayClient'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dwp.users.service.HeroGateWayClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2020-10-26 11:38:53.651  INFO 6428 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-10-26 11:38:53.714 ERROR 6428 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field heroGateWayClient in com.dwp.users.service.HeroGatewayService required a bean of type 'com.dwp.users.service.HeroGateWayClient' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.dwp.users.service.HeroGateWayClient' in your configuration.
-
-2020-10-26 11:38:53.714 ERROR 6428 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@47dd778] to prepare test instance [com.dwp.users.UsersApplicationTests@d949bc4]
-
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[na:na]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[na:na]
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:na]
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[na:na]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132) ~[junit-platform-launcher-1.6.2.jar:1.6.2]
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) ~[junit5-rt.jar:na]
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220) ~[junit-rt.jar:na]
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53) ~[junit-rt.jar:na]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'heroGatewayService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroGatewayService': Unsatisfied dependency expressed through field 'heroGateWayClient'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dwp.users.service.HeroGateWayClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 63 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'heroGatewayService': Unsatisfied dependency expressed through field 'heroGateWayClient'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dwp.users.service.HeroGateWayClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 82 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dwp.users.service.HeroGateWayClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 95 common frames omitted
-
+2021-01-26 14:47:45.318  INFO 15124 --- [restartedMain] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 11.0.9 on LAPTOP-JARPR8VJ with PID 15124 (C:\Users\leonl\IdeaProjects\users\users\target\classes started by leonl in C:\Users\leonl\IdeaProjects\users\users)
+2021-01-26 14:47:45.332  INFO 15124 --- [restartedMain] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2021-01-26 14:47:45.451  INFO 15124 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\leonl\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2021-01-26 14:47:45.452  INFO 15124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-26 14:47:47.209  INFO 15124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-26 14:47:47.226  INFO 15124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 14:47:47.227  INFO 15124 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-26 14:47:47.355  INFO 15124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2021-01-26 14:47:47.356  INFO 15124 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1902 ms
+2021-01-26 14:47:47.360 TRACE 15124 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
+2021-01-26 14:47:47.370 TRACE 15124 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
+2021-01-26 14:47:47.370 TRACE 15124 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'formContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+2021-01-26 14:47:47.370 TRACE 15124 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
+2021-01-26 14:47:47.374 DEBUG 15124 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2021-01-26 14:47:47.375 DEBUG 15124 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-01-26 14:47:47.932 TRACE 15124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.d.u.c.UserController:
+	{GET [/city/London/users]}: getCityUsers()
+	{GET [/city/London/users/catchment]}: getCatchmentUsers()
+	{GET [/city/London/users/all]}: getAllUsersInCityAndWithinCatchment()
+2021-01-26 14:47:47.940 TRACE 15124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ [/swagger-resources/configuration/ui]}: uiConfiguration()
+	{ [/swagger-resources]}: swaggerResources()
+	{ [/swagger-resources/configuration/security]}: securityConfiguration()
+2021-01-26 14:47:47.949 TRACE 15124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-01-26 14:47:47.954 DEBUG 15124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2021-01-26 14:47:48.040  INFO 15124 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 14:47:48.453  INFO 15124 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 14:47:48.489  INFO 15124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-26 14:47:48.495 DEBUG 15124 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-26 14:47:48.576 DEBUG 15124 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2021-01-26 14:47:48.601 TRACE 15124 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2021-01-26 14:47:48.602 TRACE 15124 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-01-26 14:47:48.602 DEBUG 15124 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-26 14:47:48.610 DEBUG 15124 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-26 14:47:48.834  INFO 15124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2021-01-26 14:47:48.835  INFO 15124 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 14:47:48.869  INFO 15124 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 14:47:48.903  INFO 15124 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 14:47:49.097  INFO 15124 --- [restartedMain] com.dwp.users.UsersApplication           : Started UsersApplication in 4.487 seconds (JVM running for 5.796)
+2021-01-26 14:49:34.787  INFO 15124 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 14:49:34.789  INFO 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 14:49:34.790 TRACE 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@222b230b
+2021-01-26 14:49:34.791 TRACE 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@54fe9405
+2021-01-26 14:49:34.792 TRACE 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@1c372b63
+2021-01-26 14:49:34.794 TRACE 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2021-01-26 14:49:34.794 TRACE 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2021-01-26 14:49:34.794 DEBUG 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-01-26 14:49:34.795  INFO 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-01-26 14:49:34.812 TRACE 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/base/city/London/users", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-01-26 14:49:34.820 TRACE 15124 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.dwp.users.controller.UserController#getCityUsers()
+2021-01-26 14:49:34.851 TRACE 15124 --- [http-nio-8080-exec-4] o.s.web.method.HandlerMethod             : Arguments: []
+2021-01-26 14:49:35.417 TRACE 15124 --- [http-nio-8080-exec-4] o.s.w.r.f.client.ExchangeFunctions       : [6d19e26d] HTTP GET https://bpdts-test-app.herokuapp.com/city/London/users, headers={}
+2021-01-26 14:49:44.726 TRACE 15124 --- [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [6d19e26d] Response 200 OK, headers={masked}
+2021-01-26 14:49:44.874 TRACE 15124 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6d19e26d] Decoded [com.dwp.users.model.User@c85be8aa]
+2021-01-26 14:49:44.875 TRACE 15124 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6d19e26d] Decoded [com.dwp.users.model.User@93b83e16]
+2021-01-26 14:49:44.876 TRACE 15124 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6d19e26d] Decoded [com.dwp.users.model.User@57e69065]
+2021-01-26 14:49:44.877 TRACE 15124 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6d19e26d] Decoded [com.dwp.users.model.User@72b3423f]
+2021-01-26 14:49:44.877 TRACE 15124 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6d19e26d] Decoded [com.dwp.users.model.User@6e33a175]
+2021-01-26 14:49:44.877 TRACE 15124 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6d19e26d] Decoded [com.dwp.users.model.User@4c3796dc]
+2021-01-26 14:49:44.891 DEBUG 15124 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-01-26 14:49:44.891 TRACE 15124 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.dwp.users.model.User@c85be8aa, com.dwp.users.model.User@93b83e16, com.dwp.users.model.User@57e69065, com.dwp.users.model.User@72b3423f, com.dwp.users.model.User@6e33a175, com.dwp.users.model.User@4c3796dc]]
+2021-01-26 14:49:44.922 TRACE 15124 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2021-01-26 14:49:44.923 TRACE 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-01-26 14:49:44.923 DEBUG 15124 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2021-01-26 14:54:19.171  INFO 1508 --- [restartedMain] com.dwp.users.UsersApplication           : Starting UsersApplication using Java 11.0.9 on LAPTOP-JARPR8VJ with PID 1508 (C:\Users\leonl\IdeaProjects\users\users\target\classes started by leonl in C:\Users\leonl\IdeaProjects\users\users)
+2021-01-26 14:54:19.176  INFO 1508 --- [restartedMain] com.dwp.users.UsersApplication           : No active profile set, falling back to default profiles: default
+2021-01-26 14:54:19.264  INFO 1508 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\leonl\.m2\repository\org\glassfish\hk2\hk2\2.6.1\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-utils.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.annotation-api.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/jakarta.inject.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-api.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/aopalliance-repackaged.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-core.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-locator.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/javassist.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/hk2-runlevel.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/class-model.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-analysis.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-commons.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-tree.jar,file:/C:/Users/leonl/.m2/repository/org/glassfish/hk2/hk2/2.6.1/asm-util.jar
+2021-01-26 14:54:19.265  INFO 1508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-26 14:54:21.683  INFO 1508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-26 14:54:21.704  INFO 1508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 14:54:21.705  INFO 1508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-26 14:54:21.880  INFO 1508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring embedded WebApplicationContext
+2021-01-26 14:54:21.880  INFO 1508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2614 ms
+2021-01-26 14:54:21.885 TRACE 1508 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Added existing Servlet initializer bean 'dispatcherServletRegistration'; order=2147483647, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]
+2021-01-26 14:54:21.908 TRACE 1508 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'characterEncodingFilter'; order=-2147483648, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]
+2021-01-26 14:54:21.908 TRACE 1508 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'formContentFilter'; order=-9900, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class]
+2021-01-26 14:54:21.909 TRACE 1508 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Created Filter initializer for bean 'requestContextFilter'; order=-105, resource=class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]
+2021-01-26 14:54:21.914 DEBUG 1508 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2021-01-26 14:54:21.915 DEBUG 1508 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2021-01-26 14:54:22.393 TRACE 1508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.d.u.c.UserController:
+	{GET [/city/London/users/all]}: getAllUsersInCityAndWithinCatchment()
+	{GET [/test]}: gettest()
+	{GET [/city/London/users/catchment]}: getCatchmentUsers()
+	{GET [/city/London/users]}: getCityUsers()
+2021-01-26 14:54:22.401 TRACE 1508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ [/swagger-resources]}: swaggerResources()
+	{ [/swagger-resources/configuration/ui]}: uiConfiguration()
+	{ [/swagger-resources/configuration/security]}: securityConfiguration()
+2021-01-26 14:54:22.412 TRACE 1508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest)
+2021-01-26 14:54:22.419 DEBUG 1508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2021-01-26 14:54:22.528  INFO 1508 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-26 14:54:22.821  INFO 1508 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-26 14:54:22.849  INFO 1508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-26 14:54:22.854 DEBUG 1508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-01-26 14:54:22.900 DEBUG 1508 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2021-01-26 14:54:22.918 TRACE 1508 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2021-01-26 14:54:22.918 TRACE 1508 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-01-26 14:54:22.918 DEBUG 1508 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-01-26 14:54:22.926 DEBUG 1508 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-01-26 14:54:23.072  INFO 1508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/base'
+2021-01-26 14:54:23.075  INFO 1508 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-26 14:54:23.105  INFO 1508 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-26 14:54:23.146  INFO 1508 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-26 14:54:23.318  INFO 1508 --- [restartedMain] com.dwp.users.UsersApplication           : Started UsersApplication in 4.91 seconds (JVM running for 5.913)
+2021-01-26 14:55:31.123  INFO 1508 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/base]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-26 14:55:31.126  INFO 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-26 14:55:31.126 TRACE 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@62ad856c
+2021-01-26 14:55:31.127 TRACE 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@763034a
+2021-01-26 14:55:31.127 TRACE 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@47895fb0
+2021-01-26 14:55:31.129 TRACE 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2021-01-26 14:55:31.130 TRACE 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2021-01-26 14:55:31.131 DEBUG 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-01-26 14:55:31.131  INFO 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-01-26 14:55:31.151 TRACE 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/base/city/London/users", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-01-26 14:55:31.161 TRACE 1508 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.dwp.users.controller.UserController#getCityUsers()
+2021-01-26 14:55:31.177 TRACE 1508 --- [http-nio-8080-exec-3] o.s.web.method.HandlerMethod             : Arguments: []
+2021-01-26 14:55:31.584 TRACE 1508 --- [http-nio-8080-exec-3] o.s.w.r.f.client.ExchangeFunctions       : [6ce3ee2b] HTTP GET https://bpdts-test-app.herokuapp.com/city/London/users, headers={}
+2021-01-26 14:55:33.731 TRACE 1508 --- [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [6ce3ee2b] Response 200 OK, headers={masked}
+2021-01-26 14:55:33.832 TRACE 1508 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6ce3ee2b] Decoded [com.dwp.users.model.User@c85be8aa]
+2021-01-26 14:55:33.834 TRACE 1508 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6ce3ee2b] Decoded [com.dwp.users.model.User@93b83e16]
+2021-01-26 14:55:33.835 TRACE 1508 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6ce3ee2b] Decoded [com.dwp.users.model.User@57e69065]
+2021-01-26 14:55:33.836 TRACE 1508 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6ce3ee2b] Decoded [com.dwp.users.model.User@72b3423f]
+2021-01-26 14:55:33.837 TRACE 1508 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6ce3ee2b] Decoded [com.dwp.users.model.User@6e33a175]
+2021-01-26 14:55:33.838 TRACE 1508 --- [reactor-http-nio-2] o.s.http.codec.json.Jackson2JsonDecoder  : [6ce3ee2b] Decoded [com.dwp.users.model.User@4c3796dc]
+2021-01-26 14:55:33.853 DEBUG 1508 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-01-26 14:55:33.855 TRACE 1508 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.dwp.users.model.User@c85be8aa, com.dwp.users.model.User@93b83e16, com.dwp.users.model.User@57e69065, com.dwp.users.model.User@72b3423f, com.dwp.users.model.User@6e33a175, com.dwp.users.model.User@4c3796dc]]
+2021-01-26 14:55:33.902 TRACE 1508 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2021-01-26 14:55:33.902 TRACE 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-01-26 14:55:33.903 DEBUG 1508 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2021-01-26 14:55:51.534 TRACE 1508 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/base/test", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-01-26 14:55:51.536 TRACE 1508 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.dwp.users.controller.UserController#gettest()
+2021-01-26 14:55:51.538 TRACE 1508 --- [http-nio-8080-exec-4] o.s.web.method.HandlerMethod             : Arguments: []
+2021-01-26 14:55:51.552 DEBUG 1508 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2021-01-26 14:55:51.552 TRACE 1508 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Test Success"]
+2021-01-26 14:55:51.555 TRACE 1508 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2021-01-26 14:55:51.558 TRACE 1508 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-01-26 14:55:51.558 DEBUG 1508 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}

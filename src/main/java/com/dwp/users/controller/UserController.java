@@ -32,6 +32,14 @@ public class UserController {
         return heroGatewayService.retrieveUsers();
     }
 
+    @GetMapping("/test")
+    @ResponseBody
+    public String gettest() {
+        return "Test Success";
+    }
+
+
+
     /**
      * @return All people from London
      */
@@ -43,6 +51,7 @@ public class UserController {
     @GetMapping("/city/London/users")
     @ResponseBody
     public List<User> getCityUsers() {
+
         return heroGatewayService.retrieveCityUsers();
     }
 
